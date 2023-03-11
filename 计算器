@@ -1,0 +1,20 @@
+def calculator():
+    print("欢迎使用计算器！")
+    num1 = float(input("请输入第一个数字："))
+    op = input("请输入操作符（+、-、*、/）：")
+    num2 = float(input("请输入第二个数字："))
+    if op == "+":
+        print("结果为：", num1 + num2)
+    elif op == "-":
+        print("结果为：", num1 - num2)
+    elif op == "*":
+        print("结果为：", num1 * num2)
+    elif op == "/":
+        if num2 == 0:
+            print("错误：除数不能为0！")
+        else:
+            print("结果为：", num1 / num2)
+    else:
+        print("错误：无效的操作符！")
+
+calculator()
